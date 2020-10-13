@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+body {
+  background: #f7f7f7;
+  font-family: Roboto, Ubuntu;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 6rem auto;
+  background: #fff;
+  padding: 2rem 1rem 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#login h1,
+#register h1,
+#delivery h1,
+#cart h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+input[type='email'],
+input[type='password'],
+input[type='text'],
+input[type='tel'] {
+  width: 100%;
+  padding: 0.6rem 0.3rem;
+  margin-bottom: 1rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #6c757d;
+  text-align: center;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+form button {
+  display: block;
+  width: 40%;
+  margin: 1rem auto 0;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: rgb(195, 195, 195);
+}
+
+form button:hover {
+  background: rgb(239, 239, 239);
+  cursor: pointer;
+}
+
+.error {
+  color: #dc3545;
+  text-align: center;
+}
+
+#cart table tbody {
+  margin: 1rem 0;
+}
+
+#cart table th,
+#cart table td {
+  text-align: center;
+}
+
+#cart table button {
+  display: inline-block;
+  width: 15%;
+  border-radius: 10px;
+  border: none;
+  background: rgb(195, 195, 195);
+}
+
+#cart table button:hover {
+  background: rgb(239, 239, 239);
+  cursor: pointer;
+}
+
+#cart table #quantity {
+  margin: 0 10px;
+}
+
+#cart table th,
+#cart table td {
+  padding: 10px 0;
+}

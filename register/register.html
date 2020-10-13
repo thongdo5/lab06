@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div id="register" class="container">
+      <h1>Register</h1>
+      <form id="register-form" action="/register/register.html" mothed="get">
+        <div class="email">
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="password">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="confirmed-pwd">
+          <input
+            type="password"
+            id="confirmed-pwd"
+            name="confirmed-pwd"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+        <p class="error confirmed-pwd-error"></p>
+        <button type="submit">Sign up</button>
+      </form>
+    </div>
+    <script src="registerValidate.js"></script>
+  </body>
+</html>

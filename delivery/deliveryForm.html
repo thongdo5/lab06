@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Delivery</title>
+  </head>
+  <body>
+    <div id="delivery" class="container">
+      <h1>Delivery</h1>
+      <form id="delivery-form" action="/delivery/delivery.html" mothed="get">
+        <div class="name">
+          <input type="text" id="name" name="name" placeholder="Full name" />
+        </div>
+        <p class="error name-err"></p>
+        <div class="phone">
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{2}[0-9]{3}[0-9]{3}([0-9]{2}|[0-9]{3})"
+            placeholder="1234567890 or 12345678901"
+          />
+        </div>
+        <p class="error phone-err"></p>
+        <div class="address">
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Address"
+          />
+        </div>
+        <p class="error address-err"></p>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="deliveryValidate.js"></script>
+  </body>
+</html>
